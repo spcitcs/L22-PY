@@ -1,4 +1,5 @@
 venv/
-.replit
+replit
 replit.nix
+.breakpoints
 .config/
