@@ -16,7 +16,10 @@ if __name__ == "__main__":
                     firstline = f.readlines()[0].rstrip()
                 if "--RUN" in firstline:
                     n += 1
-                    print(f"\n[ TASK - {n} ]")
+                    tag = firstline.split("--RUN")[-1].strip()
+                    if(tag != ""):
+                        tag = " : " + tag
+                    print(f"\n[ TASK - {n}{tag} ]")
                     print(f"[ Running from {dir} ]\n")
                     start = datetime.now()
                     exec(open(dir).read())
