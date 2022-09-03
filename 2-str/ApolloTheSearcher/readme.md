@@ -1,4 +1,4 @@
 # Biografi
-Nama    : Gentha Ardaan \n
-Kelas   : 12 IPA 3 \n
+Nama    : Gentha Ardaana**
+Kelas   : 12 IPA 3**
 Hobby   : Jajan
