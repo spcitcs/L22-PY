@@ -1,85 +1,80 @@
-# Basic Array
-# import os
+# Set, # Map
+
+# satyo = [1,2,3]
+# satyo.insert(0,-3)
+# satyo.insert(1,-2)
+# satyo.insert(2,-1)
+# satyo.insert(3,0)
+# print(satyo, len(satyo))
+
+# myList = [1,2,3]
+# myList.insert(0,0)
+# myList.insert(0,-1)
+# myList.insert(0,-2)
+# myList.insert(0,-3)
+# print(myList, len(myList))
+
+# myList = [1,2,3]
+# hasil = [-3,-2,-1,0] + myList
+
+# hasil.pop()
+# hasil.pop(0)
+
+# # [-2,-1,0,1,2] 
+
+# hasil.insert(-3,[1,2])
+
+# print(hasil, len(hasil))
+
+# # [-2,-1,[1,2],0,1,2]
+# print(hasil[2][1]) # 
+
+# Try and Error
+
+matrix = [[1,2,3], # --> t -->  [[1,4,7],
+          [4,5,6], #             [2,5,8],
+          [7,8,9]] #             [3,6,9]]
+
+# transpose
+# expected result
+# [[1,4,7],[2,5,8],[3,6,9]]
+
+# matrixHasil = []
+# matrix1 = []
+# matrix1.append(matrix[0][0])
+# matrix1.append(matrix[1][0])
+# matrix1.append(matrix[2][0])
+# matrixHasil.append(matrix1)
+# matrix2 = []
+# matrix2.append(matrix[0][1])
+# matrix2.append(matrix[1][1])
+# matrix2.append(matrix[2][1])
+# matrixHasil.append(matrix2)
+# matrix3 = []
+# matrix3.append(matrix[0][2])
+# matrix3.append(matrix[1][2])
+# matrix3.append(matrix[2][2])
+# matrixHasil.append(matrix3)
+
+# matrixHasil = [
+#    [matrix[0][0],matrix[1][0],matrix[2][0]],
+#    [matrix[0][1],matrix[1][1],matrix[2][1]],
+#    [matrix[0][2],matrix[1][2],matrix[2][2]],
+# ]
+
+# print(matrixHasil)
+
+_A = [[1,2], # A = [[a,b],
+     [3,4]] #      [c,d]]
+_A = [[6,3],
+     [2,7]]
+A = [[5,-2],[8,6]]
+det = (A[0][0] * A[1][1]) - (A[0][1] * A[1][0])
+
+print(det) # hasil determinan matrix
+# -2
 
 
-# os.system("clear")
-# List
-arr =  [1,2,3,4,5,6,7,8,"Alfian",9,True]
 
-print(arr[1])
-print(arr[0])
-print(arr[8])
-print(arr[-3])
-print(arr[-11])
-# print(arr[11]) # ERROR!
-# print(arr[-12]) # ERROR
 
-# Len Function dan Index
-# Cara menentukan panjang array python
-panjangArray = len(arr)
-print(panjangArray) # 10/11
 
-arr1 = [1, "A", 2, "B", 3, "C", 4, "D"]
-arr2 = ["A", "B", "A", "C", 1,2,3,5,]
-
-print(arr1) # [1, 'A', 2, 'B', 3, 'C', 4, 'D']
-print(arr2[1]) # B
-# print(arr1[10]) # Err
-print(arr2[-3]) # 2
-print(arr1[2**2]) # 3
-print(arr2[int(3-(4/2))]) # B
-print(arr1[int("12") - 10]) # 2 
-print(arr2[-6]) # A
-# print(arr1[str(-2)]) # Err 
-print(arr2) # ['A','B','A','C',1,2,3,5]
-print(len(arr1)) # 8
-print(len(arr2) * 2) # 16
-
-# Sub List
-arr = [1,2,3,4,5,6,7,8,9,10]
-
-print(arr[:5:1]) 
-print(arr[:5:-1])
-print(arr[5::-1])
-print(arr[5::1])
-
-fruits = ["apel", "mangga", "anggur", "jeruk", "markisa"]
-
-print(arr[1:5:2]) # [2,4]
-print(fruits[2::-1]) # ["mangga", "apel"]
-print(arr[3::3]) # [4,7,10] [4,7]
-print(fruits[:5:-2]) # [] 
-print(arr[-2:-5:-2]) # [9,7]
-print(fruits[-1:]) # ["Durian"]
-print(arr[7]) # 8
-print(fruits[0:]) # semua
-print(arr[3:-3:]) # [4,5,6,7]
-print(fruits[::]) # semua
-print(arr[len(fruits):len(fruits[:-2])*-1])
-# [6,7]
-
-print(arr[0:11:1]) # [1,2,3,4,5,6,7,8,9,10]
-print(arr[::2]) # [2,4,6,8,10]
-print(fruits[::3]) # jeruk, anggur
-
-print(len(arr)) # 10
-print(arr[5]) # 6
-print(arr[9]) # 10
-print(arr[5:9]) # [6,7,8,9]
-print(arr[5:10]) # [6,7,8,9,10]
-# print(arr[10]) # Index Out of Range
-print(arr[5:-2]) # [6, 7, 8]
-print(arr[-5:-2]) # [6, 7, 8]
-print(arr[2:5]) # [3,4,5]
-print(arr[5:2]) # [5,4,3] 
-print(arr[5:-3]) # [6, 7] 
-print(arr[5:-6]) # []
-print(arr[5:]) # [6,7,8,9,10]
-print(arr[:5]) # [1,2,3,4,5]
-print(arr[:-8]) # [1,2]
-print(arr[-8:]) # [3,4,5,6,7,8,9,10]
-print(arr[:])
-
-# Append
-# Remove
-# Sort
